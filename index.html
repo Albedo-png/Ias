@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="stars"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- ENTRADA -->
+  <section class="screen intro" id="intro">
+    <div class="intro-content">
+      <p class="eyebrow">uma pequena coisa que fiz para você</p>
+      <h1>Entre no<br><span>nosso universo.</span></h1>
+      <p class="sub">Coloque o fone. Tem uma surpresa esperando por você.</p>
+      <button class="primary-btn" id="enterBtn">
+        <span>✨</span> Entrar
+      </button>
+    </div>
+    <div class="scroll-hint">toque para começar</div>
+  </section>
+
+  <!-- UNIVERSO -->
+  <main id="experience" class="hidden">
+        <div class="music-player" id="musicPlayer">
+          <button id="musicToggle" type="button" aria-label="Tocar música">
+            <span id="musicIcon">♫</span>
+          </button>
+          <div class="music-info">
+            <strong>Lisboa</strong>
+            <span>ANAVITÓRIA &amp; Lenine</span>
+          </div>
+          <audio id="siteMusic" preload="auto" loop>
+            <source src="Lisboa.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+
+    <section class="screen universe" id="universe">
+      <div class="moon"></div>
+      <div class="universe-copy">
+        <p class="eyebrow">depois de demorar um mês para criar coragem...</p>
+        <h2>eu ainda escolheria<br><span>ter mandado aquela mensagem.</span></h2>
+        <p>Clique nos pequenos mundos. Cada um guarda uma parte de tudo que faz a Iasmin ser a Iasmin que eu amo.</p>
+      </div>
+
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+
+      <button class="planet planet-one" data-modal="moments" aria-label="Nossos momentos">
+        <span>✦</span><small>momentos</small>
+      </button>
+      <button class="planet planet-two" data-modal="you" aria-label="Seu jeito">
+        <span>♡</span><small>seu jeito</small>
+      </button>
+      <button class="planet planet-three" data-modal="future" aria-label="O que ainda quero viver">
+        <span>∞</span><small>futuro</small>
+      </button>
+    </section>
+
+    <!-- MODAIS -->
+    <div class="modal" id="moments">
+      <div class="modal-card">
+        <button class="close">×</button>
+        <span class="modal-icon">✦</span>
+        <h3>Alguns momentos</h3>
+        <p>Tem momentos que parecem pequenos na hora, mas depois a gente percebe que eram especiais.</p>
+        <div class="memory">
+          <span>01</span>
+          <div>
+            <strong>Antes mesmo de tudo começar</strong>
+            <p>Eu lembro até hoje de ter passado quase um mês criando coragem para te mandar mensagem pelo Instagram. Não era por falta de vontade — era justamente o contrário. Você era tão bonita que eu ficava pensando em como começar uma conversa sem parecer um completo idiota.</p>
+          </div>
+        </div>
+        <div class="memory">
+          <span>02</span>
+          <div>
+            <strong>Uma pracinha qualquer</strong>
+            <p>Eu gosto muito das vezes em que a gente senta em um banquinho de alguma pracinha e simplesmente fica ali. Abraçados, conversando por um tempão, sem precisar que esteja acontecendo nada grandioso. De algum jeito, esses momentos ficam enormes para mim.</p>
+          </div>
+        </div>
+        <div class="memory">
+          <span>03</span>
+          <div>
+            <strong>Aquela noite do RPG</strong>
+            <p>Você estava jogando RPG, eu fui te buscar e a gente acabou dentro do carro conversando. E então aconteceu nosso primeiro beijo. Gosto de lembrar que uma coisa tão importante para mim começou de um jeito tão simples: nós dois conversando, juntos, até a coragem virar beijo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="you">
+      <div class="modal-card">
+        <button class="close">×</button>
+        <span class="modal-icon">♡</span>
+        <h3>Coisas que fazem você ser você</h3>
+        <p>Eu poderia ficar aqui por horas. E, sinceramente, acho que ainda faltariam coisas. Mas algumas são impossíveis de não mencionar:</p>
+        <div class="qualities">
+          <span>Seus olhos</span>
+          <span>Seu cabelo</span>
+          <span>Sua risada</span>
+          <span>Seu cheiro doce</span>
+          <span>Suas pintinhas</span>
+          <span>Seu jeito de falar</span>
+          <span>Suas mãos macias</span>
+          <span>Seu gosto musical</span>
+          <span>Seu lado nerd</span>
+          <span>Seu coração enorme</span>
+          <span>Sua inteligência</span>
+          <span>Seu senso de humor</span>
+        </div>
+        <p class="highlight">Eu gosto de você nos detalhes: na maquiagem bem feita, nas roupas bonitas, no jeito que você fala, na forma como percebe coisas pequenas que quase ninguém percebe. Gosto de ver você falando de Pokémon, JoJo, RPG ou Undertale, porque dá para perceber o quanto existe dentro dessa cabeça que eu acho tão interessante.</p>
+        <p class="highlight">E gosto ainda mais da maneira como você olha para os outros. Você se coloca no lugar das pessoas, repara no que elas sentem e tenta entender. Isso diz muito sobre quem você é.</p>
+      </div>
+    </div>
+
+    <div class="modal" id="future">
+      <div class="modal-card">
+        <button class="close">×</button>
+        <span class="modal-icon">∞</span>
+        <h3>Eu quero o que ainda não aconteceu</h3>
+        <p>Quero mais das nossas conversas que começam sem assunto e acabam durando horas. Quero mais banquinhos de praça, mais abraços demorados, mais beijos, mais risadas e mais dias comuns que, quando são com você, deixam de ser tão comuns.</p>
+        <p class="highlight">Eu quero um relacionamento sério com você. Quero namorar você, construir uma vida ao seu lado, realizar meus sonhos tendo você por perto, conhecer os seus sonhos e ajudar a realizar eles também.</p>
+        <p class="highlight">Quero que, quando a gente olhar para trás depois de muitos anos, ainda exista aquela sensação de que escolher um ao outro foi uma das coisas mais bonitas que aconteceu com a gente.</p>
+      </div>
+    </div>
+
+    <!-- TRANSIÇÃO PARA O JARDIM -->
+    <section class="garden-intro screen" id="gardenIntro">
+      <div>
+        <p class="eyebrow">e talvez seja por isso que tudo parece diferente...</p>
+        <h2>Desde você,<br><span>as coisas têm mais cor.</span></h2>
+        <button class="primary-btn" id="gardenBtn">🌷 Continuar</button>
+      </div>
+    </section>
+
+    <!-- JARDIM -->
+    <section class="screen garden" id="garden">
+      <div class="garden-copy">
+        <p class="eyebrow">toque nas flores</p>
+        <h2>Um pequeno jardim<br><span>feito de detalhes seus.</span></h2>
+        <p id="flowerHint">Porque tentar explicar tudo que eu gosto em você em poucas palavras seria injusto.</p>
+      </div>
+      <div class="flowers" id="flowers"></div>
+      <div class="ground"></div>
+
+      <div class="flower-modal" id="flowerModal" aria-hidden="true">
+        <div class="flower-modal-card">
+          <button class="flower-modal-close" id="flowerModalClose" aria-label="Fechar">×</button>
+          <div class="flower-modal-icon" id="flowerModalIcon">✿</div>
+          <p class="flower-modal-label">uma coisinha que eu gosto em você</p>
+          <h3 id="flowerModalTitle">Seu sorriso</h3>
+          <p id="flowerModalMessage"></p>
+          <div class="flower-modal-signature">— Leonardo ❤️</div>
+        </div>
+      </div>
+
+      <button class="primary-btn final-trigger" id="finalBtn">Ainda tem uma coisa... ❤️</button>
+    </section>
+
+    <!-- FINAL -->
+    <section class="screen finale" id="finale">
+      <div class="finale-content">
+        <p class="eyebrow">e agora, a parte que eu queria te dizer olhando nos seus olhos</p>
+        <h2 id="finalQuestion">Iasmin,<br><span>namora comigo?</span></h2>
+        <p class="final-text">Quando eu estou com você, tudo fica mais vivo. Mais leve. Mais feliz. Mais colorido.<br><br>Eu gosto muito de estar com você. Gosto de nós dois, dos nossos momentos e até da saudade que aparece quando você não está por perto, porque ela só existe porque eu gosto demais da sua companhia.<br><br>Eu quero viver muita coisa com você. Quero te amar nos dias incríveis e nos dias normais, rir das nossas bobagens, criar nossas próprias histórias e, se você quiser, fazer desse começo uma vida inteira.</p>
+
+        <div class="answer-buttons" id="answers">
+          <button class="yes-btn" id="yesBtn">SIM ❤️</button>
+          <button class="yes-btn secondary" id="ofCourseBtn">CLARO ❤️</button>
+        </div>
+
+        <div class="success hidden" id="success">
+          <div class="heart-big">♥</div>
+          <h3>Eu sabia. ❤️</h3>
+          <p>Então isso aqui é só o começo.</p>
+          <span>— com carinho, Leonardo</span>
+        </div>
+      </div>
+    
+        <div class="answer-stamp" id="answerStamp" aria-live="polite" hidden>
+          <div class="answer-stamp-heart">♥</div>
+          <div>
+            <strong>Nosso começo</strong>
+            <p>Você disse sim em:</p>
+            <time id="answerDateTime"></time>
+            <small>Guarda esse momento. Ele agora faz parte da nossa história. ❤️</small>
+          </div>
+        </div>
+</section>
+  </main>
+
+  <audio id="music" loop preload="auto">
+    <!-- COLOQUE SUA MÚSICA LOCAL AQUI:
+         <source src="musica.mp3" type="audio/mpeg">
+    -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
